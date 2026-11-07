@@ -1,0 +1,60 @@
+site_name: Webex Contact Center · AI Assistant for Agents
+site_description: Cisco Live Melbourne 2026 Webex Contact Center lab
+repo_url: https://github.com/cisco-collaboration-labguide/Webex-Contact-Center-AI-Assistant-Lab
+edit_uri: edit/main/docs/
+theme:
+  name: material
+  font: false
+  palette:
+  - scheme: default
+    primary: custom
+    accent: cyan
+    toggle:
+      icon: material/weather-night
+      name: Switch to dark mode
+  - scheme: slate
+    primary: custom
+    accent: cyan
+    toggle:
+      icon: material/weather-sunny
+      name: Switch to light mode
+  features:
+  - navigation.tabs
+  - navigation.sections
+  - navigation.tracking
+  - navigation.footer
+  - navigation.top
+  - toc.integrate
+  - search.highlight
+  - search.suggest
+  - content.action.edit
+  - content.code.copy
+  logo: assets/cisco-header-logo.png
+plugins:
+- search
+markdown_extensions:
+- attr_list
+- tables
+- toc:
+    permalink: true
+extra_css:
+- stylesheets/extra.css
+extra:
+  generator: false
+
+nav:
+- Home: index.md
+- Lab tasks:
+  - Enable AI features: task-1.md
+  - Create a Real-time Assist skill: task-2.md
+  - Assign the skill and add wrap-up codes: task-3.md
+  - Stream call audio: task-4.md
+  - Test as an agent: task-5.md
+- Verification and troubleshooting: verification.md
+validation:
+  nav:
+    omitted_files: warn
+    not_found: warn
+  links:
+    not_found: warn
+    anchors: warn
